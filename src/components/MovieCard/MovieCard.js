@@ -24,9 +24,18 @@ const MovieCard = (props) =>{
                             <label>Rated</label>
                             <span>{props.movie.Rated}</span>
                         </div>
+                        <div className="info-section">
+                            <label>Runtime</label>
+                            <span>{props.movie.Runtime}</span>
+                        </div>
+                    </div>
+                    <div className="plot" style={{frontSize: '12px'}}>
+                        <p>{props.movie.Runtime}</p>
                     </div> 
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
+
+export default MovieCard;
